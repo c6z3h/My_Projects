@@ -5,3 +5,6 @@ This is a practice on OpenAI's Gym problem Frozen Lake v0;
 a self-challenge after finishing University of Alberta's Reinforcement Learning Course (Coursera).
 
 ## Project 2: PettingZoo Gym PistonBall_v4
+- Referring to https://github.com/PettingZoo-Team/PettingZoo/blob/master/tutorials/13_lines.py
+- Clear Disk Space...
+- Implement, and optimize. Then apply to another problem.
