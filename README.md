@@ -1,4 +1,5 @@
-# FLake_OpenAI
+# Welcome! Here's a list of personal projects I've done to explore Reinforcement Learning further.
 
-This is a practice on OpenAI's Gym;
-a self-challenge after finishing University of Alberta's Reinforcement Learning Course (Coursera).
+## Project 1: OpenAI Gym FrozenLake_v0
+
+## Project 2: PettingZoo Gym PistonBall_v4
