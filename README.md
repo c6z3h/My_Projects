@@ -1,4 +1,5 @@
 # Welcome! Here's a list of personal projects.
+There's always more to learn, let me know if you have feedback or if you want more generalizable code so you can use some of these functions yourself too! 😊
 
 ## Project 1: OpenAI Gym FrozenLake_v0
 This is a practice on OpenAI's Gym problem Frozen Lake v0, a self-challenge after finishing University of Alberta's Reinforcement Learning Course (Coursera). Created an agent to traverse a 4x4 maze.
