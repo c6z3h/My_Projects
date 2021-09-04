@@ -13,4 +13,7 @@ This is a practice on OpenAI's Gym problem Frozen Lake v0, a self-challenge afte
 - Implement, and optimize. Then apply to another problem.
 
 ## Project 3: LUMO$
-- Automation of logged expenses transfer from Telegram saved messages to Excel using BeautifulSoup and Python.
+Automating transfer of logged expenses from Telegram saved messages to Excel using BeautifulSoup and Python.  
+- I'm kinda old-school with expense logging, I like to write them in my Telegram Saved Messages, and then put them into PC Excel sheet for calculations.
+- The apps out there either look too fancy (and make me want to spend more!?) or do not capture the versatility in the dates (sometimes I like to log 4 FULL weeks into 1 month instead of just 1st to last day of month, which may be 4.5 weeks).
+- But... once I manually typed in my expenses and make it seem like I exceeded my budget by $100 😱😱😱. To reduce such human error and also the squinting, here's <font size="24"> LUMO$! </font>
