@@ -1,5 +1,5 @@
 # Welcome! Here's a list of personal projects.
-There's always more to learn, let me know if you have feedback or if you want more generalizable code so you can use some of these functions yourself too! 😊
+Comments and feedback welcome, let's learn together!
 
 ## Project 1: OpenAI > FrozenLake
 A ```Reinforcement Learning``` agent I developed to solve OpenAI's challenge, description [here](https://gym.openai.com/envs/FrozenLake-v0/).  
