@@ -1,5 +1,5 @@
 # Welcome! Here's a list of personal projects.
-Comments and feedback welcome, let's learn together!
+Comments and feedback welcome, let's learn together!  
 
 ## Project 1: OpenAI > FrozenLake
 A ```Reinforcement Learning``` agent I developed to solve OpenAI's challenge, description [here](https://gym.openai.com/envs/FrozenLake-v0/).  
@@ -17,6 +17,6 @@ An attempt at a ```Multi-Agent Reinforcement Learning``` problem to coordinate 2
 
 ## Project 3: LUMO$
 A ```Python script``` for automating transfer of logged expenses from HTML Telegram saved messages to Excel using BeautifulSoup.  
-- I'm kinda old-school with expense logging, I like to write them in my Telegram Saved Messages, and then put them into PC Excel sheet for calculations.
-- The apps out there either look too fancy (and make me want to spend more!?) or do not capture the versatility in the dates (sometimes I like to log 4 FULL weeks into 1 month instead of just 1st to last day of month, which may be 4.5 weeks).
-- But... once I manually typed in my expenses and make it seem like I exceeded my budget by $100 😱😱😱. To reduce such human error and also the squinting, here's <mark>✨LUMO$! ✨</mark>
+Motivation:
+1. Solves the problem of typos when I key in expenses manually.
+2. Saves me 30 minutes of error-checking each month. This took 5 hours to develop, so it will be worth it in 10 months!
