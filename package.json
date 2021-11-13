@@ -1,0 +1,17 @@
+{
+  "main": "inspire/backend/index.js",
+  "scripts": {
+    "start": "node inspire/backend/index.js",
+    "dev": "nodemon inspire/backend/index.js",
+    "test": "echo \\\"Error: no test specified\\\" && exit 1\""
+  },
+  "author": "ZH Chua",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
+}
