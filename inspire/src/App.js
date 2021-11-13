@@ -64,11 +64,11 @@ const App = () => {
   const addLink = (event) => {
     event.preventDefault()
     const linkObject = {
-      id: links.length + 1,
+      // id: links.length + 1,
       link: newLink,
       type: newType,
     }
-    console.log(`This is the linkObject ${linkObject}, id ${linkObject.id}, link ${linkObject.link}, and type ${linkObject.type}`)
+    console.log(`This is the linkObject ${linkObject}, link ${linkObject.link}, and type ${linkObject.type}`)
     // const personsArray = persons.map(person => person.name.toLowerCase())
     // // Throw Error If Name Already in List
     // console.log("personsArray", personsArray)
