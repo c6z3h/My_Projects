@@ -1,1 +1,1 @@
-web: npm start
+web: cd inspire/backend/ && npm start
