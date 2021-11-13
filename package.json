@@ -1,4 +1,7 @@
 {
+  "name": "backend",
+  "version": "0.0.1",
+  "description": "",
   "main": "inspire/backend/index.js",
   "scripts": {
     "start": "node inspire/backend/index.js",
