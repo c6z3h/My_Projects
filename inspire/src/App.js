@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react'
-// import Persons from './components/Persons'
-// import Filter from './components/Filter'
+import GIFs from './components/GIFs'
+import Links from './components/Links'
 import SubmitForm from './components/SubmitForm'
 import Notification from './components/Notification'
 import linkService from './services/links'
-// import 'bootstrap/dist/css/bootstrap.min.css';
-// import './index.css'
+import './App.css'
 
 const Footer = () => {
   const footerStyle = {
@@ -23,37 +22,54 @@ const Footer = () => {
 
 const App = () => {
   
-  // // 1. READ PERSON(s)
-  const hook = () => {
-    linkService
-    .getAll()
-    .then(allLinks => {
-      console.log(`this is allLinks: ${allLinks}`)
-      setLinks(allLinks)
-    })
-  }
+  // // 1. READ PERSONs
+  // const hook = () => {
+  //   linkService
+  //   .getAll()
+  //   .then(allLinks => {
+  //     console.log(`this is allLinks: ${allLinks}`)
+  //     setLinks(allLinks)
+  //   })
+  // }
 
-  useEffect(hook, [])
+  // useEffect(hook, [])
 
-  // // 1. INITIALIZE
+  // 0. READ GIFs
+const hook1 = () => {
+  linkService
+  .getAllGIFs()
+  .then(allLinks => {
+    console.log(`this is allLinks: ${allLinks}`)
+    setGIFLinks(allLinks)
+  })
+}
+
+useEffect(hook1, [])
+// 0. READ LINKs
+const hook2 = () => {
+  linkService
+  .getAllLinks()
+  .then(allLinks => {
+    console.log(`this is allLinks: ${allLinks}`)
+    setWebLinks(allLinks)
+  })
+}
+
+useEffect(hook2, [])
+
+  // 1. INIT -- for user-submission
   const [ links, setLinks ] = useState([]) 
   const [ newLink, setNewLinks ] = useState('')
   const [ newType, setNewType ] = useState('GIF')
-  // const [ filter, setFilter ] = useState('')
   const [notifMessage, setNotifMessage] = useState('')
+// 1. INIT -- for rendering GIF or weblinks
+  const [ GIFLinks, setGIFLinks ] = useState([])
+  const [ webLinks, setWebLinks ] = useState([])
 
   // // Event Handler
   const handleLinkChange = (event) => setNewLinks(event.target.value)
-  const handleTypeChange=(event)=>{
-    console.log(event.target.value)
-    setNewType(event.target.value)
-    console.log("newType here: " + newType)
-  }
-  // const handleTypeChange = (event) => {
-  //   console.log(event)
-  //   setNewType(event.target.value)
-  // }
-  // const handleFilterChange = (event) => setFilter(event.target.value)
+  const handleTypeChange= (event) => setNewType(event.target.value)
+  const handleGIFChange = (event) => setGIFLinks(...GIFLinks)
 
   // // Filter
   // const peopleToShow = filter
@@ -69,35 +85,6 @@ const App = () => {
       type: newType,
     }
     console.log(`This is the linkObject ${linkObject}, link ${linkObject.link}, and type ${linkObject.type}`)
-    // const personsArray = persons.map(person => person.name.toLowerCase())
-    // // Throw Error If Name Already in List
-    // console.log("personsArray", personsArray)
-    // console.log("${newName}",`${newName}`)
-    // if (personsArray.includes(`${newName}`.toLowerCase())){
-    //     if (window.confirm(`${newName} is already added to phonebook, replace the old number with a new one?`)){
-    //       const updateMan = persons.filter(person => person.name === `${newName}`)
-    //       console.log("updateMan is", updateMan[0])
-    //       console.log("updateMan.id is", updateMan[0].id)
-    //       personService
-    //         .update(updateMan[0].id, personObject)
-    //         .catch(error => {
-    //           setNotifMessage(
-    //             `Information of '${newName}' has already been removed from server`
-    //           )
-    //           setTimeout(() => {
-    //             setNotifMessage('')
-    //           }, 5000)
-    //           setPersons(persons.filter(p => p.id !== updateMan[0].id))
-    //         })
-    //         .then(newMan => {
-    //           setPersons(persons.map(person => person.id !== newMan.id ? person : newMan))
-    //           setNotifMessage(`Updated ${newName}`)
-    //           setTimeout(() => {
-    //             setNotifMessage('')
-    //           }, 5000)
-    //         })
-    //     }
-    //   } else {
       linkService
         .create(linkObject)
         .then(returnedLinks =>{
@@ -126,36 +113,33 @@ const App = () => {
     handleLinkChange,
     handleTypeChange
   }
-  
-  // // 3. DELETE PERSON
-  // const deletePerson = id => {
-  //   const dangerMan = persons.filter(person => person.id === id)
-  //   console.log(dangerMan)
-  //   if (window.confirm(`Delete ${dangerMan[0].name} ?`)){
-  //     personService
-  //       .remove(id)
-  //       .then(persons =>{
-  //       setPersons(persons)
-  //   })
-  //   }
-    
-  // }
 
+  const randomNumberGenerator = (ListOfLinkOfChoice) => {
+    return Math.floor(Math.random()*ListOfLinkOfChoice.length)
+  }
+
+  const refresh = {
+    handleGIFChange
+  }
+
+//   const GIFs = ({url, randomNumber}) => {
+//     console.log(url)
+//     if (url.length !== 0){
+//       return url[randomNumber].link
+//     }
+//     return null
+// }
+//  console.log(`randGenerator GIFLinks[${randomNumberGenerator(GIFLinks)}`)
   return (
+    // <div> style={{ backgroundImage: `url(${GIFLinks[randomNumberGenerator(GIFLinks)].link})` }}>
     <div>
        <Notification message={notifMessage} />
-  {/* //     <h2>Phonebook</h2>
-  //     <Filter onChange={handleFilterChange} value={filter} />
-  //     <h2>add a new</h2> */}
-      <SubmitForm addLink={addLink} data={addLinkData} />
-  {/* //     <h2>Numbers</h2>
-  //     <div>
-  //       {peopleToShow.map(persons =>
-  //           <Persons persons={persons} deletePerson={() => deletePerson(persons.id)} />
-  //       )}
-  //     </div>
-  //     <br />
-  //     <br />*/}
+       < br />
+       <h1>Welcome! What inspiration will you find today?</h1>
+       < br />
+       <GIFs url={GIFLinks} randomNumber={randomNumberGenerator(GIFLinks)} refresh={refresh}/>
+       <Links url={webLinks} randomNumber={randomNumberGenerator(webLinks)}/>
+       <SubmitForm addLink={addLink} data={addLinkData} />
        <Footer /> 
     </div>
   )

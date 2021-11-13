@@ -5,7 +5,8 @@ const cors = require('cors')
 app.use(express.json())
 app.use(cors())
 app.use(express.static('build'))
-const Link = require('./models/link')
+
+const { Link, LinkGIF, Linklink } = require('./models/link')
 
 app.get('/', (request, response) => {
   response.send('<h1>Hello World!</h1>')
@@ -13,6 +14,18 @@ app.get('/', (request, response) => {
 
 app.get('/api/links', (request, response) => {
   Link.find({}).then(links => {
+    response.json(links)
+  })
+})
+
+app.get('/api/links/GIF', (request, response) => {
+  LinkGIF.find({}).then(links => {
+    response.json(links)
+  })
+})
+
+app.get('/api/links/link', (request, response) => {
+  Linklink.find({}).then(links => {
     response.json(links)
   })
 })
@@ -31,12 +44,12 @@ app.get('/api/links/:id', (request, response) => {
     })
   })
 
-const generateId = () => {
-  const maxId = links.length > 0
-    ? Math.max(...links.map(l => l.id))
-    : 0
-  return maxId + 1
-}
+// const generateId = () => {
+//   const maxId = links.length > 0
+//     ? Math.max(...links.map(l => l.id))
+//     : 0
+//   return maxId + 1
+// }
 
 app.post('/api/links', (request, response) => {
   const body = request.body
@@ -48,14 +61,14 @@ app.post('/api/links', (request, response) => {
   }
 
   const link = new Link({
-    id: generateId(),
+    // id: generateId(),
     link: body.link,
     type: body.type,
   })
 
   link.save().then(savedLink => {
     response.json(savedLink)
-    mongoose.connection.close()
+    // mongoose.connection.close()
   })
   // links = links.concat(link)
   // response.json(link)

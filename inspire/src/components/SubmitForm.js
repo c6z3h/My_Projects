@@ -1,6 +1,6 @@
-import DropdownButton from 'react-bootstrap/DropdownButton';
-import Dropdown from 'react-bootstrap/Dropdown'
-import React, { useState, useEffect } from 'react'
+// import DropdownButton from 'react-bootstrap/DropdownButton';
+// import Dropdown from 'react-bootstrap/Dropdown'
+// import React, { useState, useEffect } from 'react'
 // import { SafeAreaView, StyleSheet, TextInput } from "react-native";
 
 const SubmitForm = ({addLink,data}) => {
@@ -14,7 +14,7 @@ const SubmitForm = ({addLink,data}) => {
                 URL: <input
                 value={data.newLink}
                 onChange={data.handleLinkChange}
-                placeholder="https://imgur.com/gallery/..."
+                placeholder="https://upload.wikimedia.org/wikipedia/commons/..."
                 />
                 {/* </SafeAreaView> */}
                 <select value={data.newType} onChange={data.handleTypeChange}>
@@ -32,11 +32,12 @@ const SubmitForm = ({addLink,data}) => {
                     {/* <Dropdown.Item eventKey="GIF">GIF</Dropdown.Item>
                     <Dropdown.Item eventKey="Link">Link</Dropdown.Item>
                 </DropdownButton> */}
-                <br />
-            </div>
-            <div>
+                {/* <br /> */}
                 <button type="submit">add</button>
             </div>
+            {/* <div>
+                
+            </div> */}
         </form>
     )
 }

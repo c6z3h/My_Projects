@@ -8,6 +8,24 @@ const getAll = () => {
     return request.then(response => response.data)
 }
 
+const getAllGIFs = () => {
+  const request = axios.get(`${baseUrl}/GIF`)
+  // return request.then(response => response.data)
+   return request.then(response => {
+    console.log(response) 
+    return response.data
+   })
+}
+
+const getAllLinks = () => {
+  const request = axios.get(`${baseUrl}/link`)
+  // return request.then(response => response.data)
+  return request.then(response => {
+    console.log(response)
+    return response.data
+   })
+}
+
 const create = linkObject => {
   const request = axios.post(baseUrl, linkObject)
   return request.then(response => response.data)
@@ -22,4 +40,4 @@ const remove = (id) => {
   const request = axios.delete(`${baseUrl}/${id}`)
   return getAll()
 }
-export default { getAll, create, update, remove }
+export default { getAll, getAllGIFs, getAllLinks, create, update, remove }
