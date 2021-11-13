@@ -1,11 +1,11 @@
 # Welcome! Here's a list of personal projects.
 Comments and feedback welcome, let's learn together!  
 
-## Project 1: OpenAI > FrozenLake
+## Project 1: FrozenLake (OpenAI)
 A ```Reinforcement Learning``` agent I developed to solve OpenAI's challenge, description [here](https://gym.openai.com/envs/FrozenLake-v0/).  
 The challenge involves helping an agent manoeuvre from Point A to B on a 4x4 grid without falling into the potholes.
 
-## Project 2: PettingZoo > PistonBall
+## Project 2: PistonBall (PettingZoo)
 An attempt at a ```Multi-Agent Reinforcement Learning``` problem to coordinate 20 pistons (agents) to push the ball from right to left (of screen) ASAP.
 - Referring to https://towardsdatascience.com/multi-agent-deep-reinforcement-learning-in-15-lines-of-code-using-pettingzoo-e0b963c0820b
 - DONE: Cleared disk space, Troubleshoot errors, Read PistonBall environment documentation.
@@ -20,3 +20,8 @@ A ```Python script``` for automating transfer of logged expenses from HTML Teleg
 Motivation:
 1. Solves the problem of typos when I key in expenses manually.
 2. Saves me 30 minutes of error-checking each month. This took 5 hours to develop, so it will be worth it in 10 months!
+
+## Project 4: inspire
+A `MERN fullstack web application` to inspire users, through imagery or weblinks. Check it out here.
+Motivation:
+1. Sometimes we are stuck in the same loop of thinking (think: same friends, same family), and having a chance to see a fresh perspective will help to give us new ideas.
