@@ -3,8 +3,8 @@ Comments and feedback welcome, let's learn together!
 
 ## Project 1: FrozenLake (OpenAI)
 A ```Reinforcement Learning``` agent I developed to solve OpenAI's challenge, description [here](https://gym.openai.com/envs/FrozenLake-v0/).  
+  
 ![Problem Description](https://external-preview.redd.it/xMSGKt4DiSFUocGf0q5RMElmlztOj9wYqecFkOjUq7o.jpg?auto=webp&s=a0f1934ecc0e5c6067790d7b59d829273f513d3a)
-The challenge involves helping an agent manoeuvre from Point A to B on a 4x4 grid without falling into the potholes.
 
 ## Project 2: PistonBall (PettingZoo)
 An attempt at a ```Multi-Agent Reinforcement Learning``` problem to coordinate 20 pistons (agents) to push the ball from right to left (of screen) ASAP.
