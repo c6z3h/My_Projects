@@ -7,7 +7,10 @@ A ```Reinforcement Learning``` agent I developed to solve OpenAI's challenge, de
 ![Problem Description](https://external-preview.redd.it/xMSGKt4DiSFUocGf0q5RMElmlztOj9wYqecFkOjUq7o.jpg?auto=webp&s=a0f1934ecc0e5c6067790d7b59d829273f513d3a)
 
 ## Project 2: PistonBall (PettingZoo)
-An attempt at a ```Multi-Agent Reinforcement Learning``` problem to coordinate 20 pistons (agents) to push the ball from right to left (of screen) ASAP.
+An attempt at a ```Multi-Agent Reinforcement Learning``` problem to coordinate 20 pistons (agents) to push the ball from right to left (of screen) ASAP.  
+  
+![Problem Simulation](https://miro.medium.com/max/1400/0*ZBS0do1EE3ayKGk-.gif)  
+
 - Referring to https://towardsdatascience.com/multi-agent-deep-reinforcement-learning-in-15-lines-of-code-using-pettingzoo-e0b963c0820b
 - DONE: Cleared disk space, Troubleshoot errors, Read PistonBall environment documentation.
 - NEXT STEP:
