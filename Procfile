@@ -1,1 +1,1 @@
-web: sh -c 'cd ./inspire/backend/ && npm start'
+web: node ./inspire/backend/index.js
