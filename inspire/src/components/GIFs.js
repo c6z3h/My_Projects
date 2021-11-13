@@ -1,4 +1,4 @@
-const GIFs = ({url, randomNumber, refresh}) => {
+const GIFs = ({url, randomNumber}) => {
     console.log("GIFs: ",url)
     console.log("GIFs randNo: ",randomNumber)
     // console.log(`GIF to render: ${url[randomNumber].link}`)
@@ -11,9 +11,9 @@ const GIFs = ({url, randomNumber, refresh}) => {
             <p>
                 <img src={url[randomNumber].link} alt="GIF"></img>
                 < br />
-                <button onClick={() => refresh}>
+                {/* <button onClick={() => refresh}>
                     Refresh Image
-                </button>
+                </button> */}
             </p>
             </div>
         )

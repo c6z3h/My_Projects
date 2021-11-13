@@ -1,1 +1,1 @@
-web: node ./inspire/backend/index.js
+web: npm start

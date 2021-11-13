@@ -137,7 +137,7 @@ useEffect(hook2, [])
        < br />
        <h1>Welcome! What inspiration will you find today?</h1>
        < br />
-       <GIFs url={GIFLinks} randomNumber={randomNumberGenerator(GIFLinks)} refresh={refresh}/>
+       <GIFs url={GIFLinks} randomNumber={randomNumberGenerator(GIFLinks)}/>
        <Links url={webLinks} randomNumber={randomNumberGenerator(webLinks)}/>
        <SubmitForm addLink={addLink} data={addLinkData} />
        <Footer /> 
