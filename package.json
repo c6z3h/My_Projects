@@ -1,6 +1,18 @@
 {
+  "name": "backend",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "start": "cd ./inspire/backend/ && node index.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \\\"Error: no test specified\\\" && exit 1\"",
+    "build:ui": "rm -rf build && cd ./inspire/ && npm run build --prod && cp -r build ../"
+  },
+  "author": "ZH Chua",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   },
   "dependencies": {
     "cors": "^2.8.5",
