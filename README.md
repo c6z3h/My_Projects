@@ -26,6 +26,7 @@ Motivation:
 2. Saves me 30 minutes of error-checking each month. This took 5 hours to develop, so it will be worth it in 10 months!
 
 ## Project 4: inspire
-A `MERN fullstack web application` to inspire users, through imagery or weblinks. Check it out here.
+A `MERN fullstack web application` to inspire users, through imagery or weblinks. Check it out [here](https://inspire.herokuapp.com/).  
+![GIF](https://imgur.com/a/uZoyerB)  
 Motivation:
 1. Sometimes we are stuck in the same loop of thinking (think: same friends, same family), and having a chance to see a fresh perspective will help to give us new ideas.
