@@ -27,6 +27,6 @@ Motivation:
 
 ## Project 4: inspire
 A `MERN fullstack web application` to inspire users, through imagery or weblinks. Check it out [here](https://inspire.herokuapp.com/).  
-![GIF](https://gfycat.com/selfreliantdefiniteladybird.gif)  
+![GIF](https://gfycat.com/carefreecostlydromaeosaur.gif)  
 Motivation:
 1. Sometimes we are stuck in the same loop of thinking (think: same friends, same family), and having a chance to see a fresh perspective will help to give us new ideas.
