@@ -1,15 +1,15 @@
 Note: FE == FrontEnd, BE = BackEnd  
   
-#### Version 1.1
-- [x] Analytics
+#### Version 1.1  
+- [x] Analytics  
 Fixed up Google Analytics with react-ga package  
-- [x] User Interface (CSS/HTML)
+- [x] User Interface (CSS/HTML)  
 FE: Make GIF fill page (and text be in centre)  
 FE: Style welcome message with HTML/CSS  
 FE: Style the weblink button / key  
 FE: Make my Contact Details clearer  
-- [x] User Experience
-FE: Added message for users to know what to do on the page
+- [x] User Experience  
+FE: Added message for users to know what to do on the page  
   
 #### Version 1.0  
 - [x] (dropdown) Form: To submit GIFs or weblinks  
