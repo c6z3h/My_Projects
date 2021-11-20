@@ -1,12 +1,15 @@
 Note: FE == FrontEnd, BE = BackEnd  
   
 #### Version 1.1
-- [x] Fix Google Analytics with react-ga package  
-- [x] Make GIF fill page (and text be in centre)  
-- [x] Style welcome message with HTML/CSS  
-- [x] Style the weblink button / key  
-- [x] Make my Contact Details clearer  
-- [x] Not sure what the user should do on page (what happens if I add link?)  
+- [x] Analytics
+Fixed up Google Analytics with react-ga package  
+- [x] User Interface (CSS/HTML)
+FE: Make GIF fill page (and text be in centre)  
+FE: Style welcome message with HTML/CSS  
+FE: Style the weblink button / key  
+FE: Make my Contact Details clearer  
+- [x] User Experience
+FE: Added message for users to know what to do on the page
   
 #### Version 1.0  
 - [x] (dropdown) Form: To submit GIFs or weblinks  
@@ -29,6 +32,8 @@ BE: fix MONGODB_URI connection
 FE: Google Analytics account created  
   
 #### TODO / Feedback (! == Working On It)  
+- [ ] Improve CSS for Android / Mobile view
+- [ ] Don't re-render the page when user types something new
 - [ ] Test Audience: Reddit  
 - [ ] (optional) Render some nice, calming free music  
 - [ ] User Account -- can view what you upload and what others have uploaded. RDBMS?  
