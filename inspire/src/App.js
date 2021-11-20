@@ -5,6 +5,8 @@ import SubmitForm from './components/SubmitForm'
 import Notification from './components/Notification'
 import linkService from './services/links'
 import './App.css'
+import './services/reactGA'
+import { initGA, trackingPageGA } from './services/reactGA'
 
 const Footer = () => {
   const footerStyle = {
@@ -12,9 +14,12 @@ const Footer = () => {
     background: 'gray',
     fontStyle: 'italic',
     fontSize: 25,
+    left:0,
+    bottom:0,
+    right:0
   }
   return (
-    <div style={footerStyle}>
+    <div style={footerStyle} className="footer">
       <em>comments/feedback to: <a href="https://github.com/c6z3h">c6z3h</a></em>
     </div>
   )
@@ -22,17 +27,23 @@ const Footer = () => {
 
 const App = () => {
   
-  // // 1. READ PERSONs
-  // const hook = () => {
-  //   linkService
-  //   .getAll()
-  //   .then(allLinks => {
-  //     console.log(`this is allLinks: ${allLinks}`)
-  //     setLinks(allLinks)
-  //   })
-  // }
+  const hook = () => {
+    initGA()
+    trackingPageGA('/')
+  }
 
-  // useEffect(hook, [])
+  useEffect(hook, [])
+  
+ // google analytics events
+//  const googleAnalyticsEvent = () => {
+//   eventGA('main-button', 'buttonAction');
+// }
+
+// return (
+//   <div className="App">
+//     <header className="App-header">
+//       <img src={logo} className="App-logo" alt="logo" />
+//       <button className="App-button" onClick={googleAnalyticsEvent}>
 
   // 0. READ GIFs
 const hook1 = () => {
@@ -130,17 +141,29 @@ useEffect(hook2, [])
 //     return null
 // }
 //  console.log(`randGenerator GIFLinks[${randomNumberGenerator(GIFLinks)}`)
-  return (
+// const pictureArray = [{skyPicture1}, {skyPicture2}, {skyPicture3}, {skyPicture4}];
+
+const GIFArray = GIFLinks.map(GIFobject => GIFobject.link)
+console.log(`IMMA GIFLINKS ${JSON.stringify(GIFLinks)}`)
+console.log(`IMMA GIFARRAY ${GIFArray}`)
+const randomIndex = Math.floor(Math.random() * GIFArray.length);
+const selectedPicture = GIFArray[randomIndex];
+console.log(`IMMA selected ${selectedPicture}`)
+
+return (
     // <div> style={{ backgroundImage: `url(${GIFLinks[randomNumberGenerator(GIFLinks)].link})` }}>
-    <div>
+  <div style={{ backgroundImage: `url(${selectedPicture})`}} className="background-image">
+    {/* <div> */}
        <Notification message={notifMessage} />
        < br />
-       <h1>Welcome! What inspiration will you find today?</h1>
+       <h1 className="line__1">Welcome! What inspiration</h1>
+       <h1 className="line__2">will you find today?</h1>
        < br />
-       <GIFs url={GIFLinks} randomNumber={randomNumberGenerator(GIFLinks)}/>
+       {/* <GIFs url={GIFLinks} randomNumber={randomNumberGenerator(GIFLinks)}/> */}
        <Links url={webLinks} randomNumber={randomNumberGenerator(webLinks)}/>
+       <p className="body"> Add a GIF or Link to inspire someone else below! </p>
        <SubmitForm addLink={addLink} data={addLinkData} />
-       <Footer /> 
+       <Footer/> 
     </div>
   )
 }

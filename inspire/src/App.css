@@ -1,3 +1,84 @@
+.background-image {
+  /* background */
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* text */
+  /* padding: 140px 0; */
+  line-height: 100px;
+  text-align: center;
+}
+
+.footer {
+  position:absolute;
+  left:0;
+  bottom:0;
+  right:0;
+}
+
+.line__1,
+.line__2 {
+  color: white;
+  white-space: nowrap; /* keep text in one line */
+  overflow: hidden; /* hide text behind the cursor */
+  margin: 0.5rem auto;
+  font-family: "Major Mono Display", monospace;
+  font-size: 2rem;
+  font-weight: bold;
+  
+}
+.line__1 {
+  border-right: 2px hidden;
+  /* define animation types for text + cursor */
+  animation: animated-text__1 2s steps(20, end) 1s 1 normal both,
+    animated-cursor__1 900ms steps(20, end) 8;
+}
+.line__2 {
+  border-right: 2px hidden;
+  /* define animation types for text + cursor */
+  animation: animated-text__2 2s steps(15, end) 1s 1 normal both,
+    animated-cursor__2 900ms steps(15, end) infinite;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+}
+@keyframes animated-cursor__1 {
+  from {border-right-color: rgba(17, 17, 17, 0.9);}
+  to {border-right-color: rgba(255, 255, 255, 0.8);}
+}
+@keyframes animated-cursor__2 {
+  from {border-right-color: rgba(17, 17, 17, 0.9);}
+  to {border-right-color: rgba(255, 255, 255, 0.8);}
+}
+@keyframes animated-text__1 {
+  from {width: 0;} to {width: 45rem;}
+}
+@keyframes animated-text__2 {
+  from {width: 0;} to {width: 29rem;}
+}
+
+a:link, a:visited {
+  background-color: #36f4eb81;
+  color: rgb(0, 0, 0);
+  padding: 10px 10px;
+  text-align: center;
+  font-size: 20px;
+  text-decoration: none;
+  display: inline-block;
+}
+a:hover, a:active {
+  background-color: rgb(0, 255, 255);
+}
+
+.body {
+  color: white;
+  font-size: 25px;
+}
 .App {
   text-align: center;
 }
