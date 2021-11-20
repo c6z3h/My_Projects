@@ -14,10 +14,10 @@ BE: GET from MongoDB (DB:links)
 - [x] Welcome Message
 - [x] Developer Contact Details
 - [x] Testing
-FE: rename "heroku-app" to "inspire"
-FE: test with audience size 2
-FE: screen-record for demo video
-BE: fix MONGODB_URI connection
+FE: rename "heroku-app" to "inspire"  
+FE: test with audience size 2  
+FE: screen-record for demo video  
+BE: fix MONGODB_URI connection  
 - [x] Setup Analytics
 FE: Google Analytics account created  
   
