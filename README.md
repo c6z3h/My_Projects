@@ -28,6 +28,6 @@ Motivation:
 ## Project 4: inspire (v1.1)
 A `MERN fullstack web application` to inspire users, through imagery or weblinks. Check it out [here](https://inspire.herokuapp.com/).  
 ![GIF v1.1](https://s5.gifyu.com/images/New-tab---Work---Microsoft_-Edge-2021-11-21-14-53-07.gif)   
-  
+[![New-tab---Work---Microsoft_-Edge-2021-11-21-14-53-07.md.gif](https://s5.gifyu.com/images/New-tab---Work---Microsoft_-Edge-2021-11-21-14-53-07.md.gif)](https://gifyu.com/image/S2vql)
 Motivation:  
 1. Sometimes we are stuck in the same loop of thinking (think: same friends, same family), and having a chance to see a fresh perspective will help to give us new ideas.  
