@@ -10,6 +10,7 @@ FE: Style the weblink button / key
 FE: Make my Contact Details clearer  
 - [x] User Experience  
 FE: Added message for users to know what to do on the page  
+FE: Improved Mobile Experience  
   
 #### Version 1.0  
 - [x] (dropdown) Form: To submit GIFs or weblinks  
@@ -32,8 +33,7 @@ BE: fix MONGODB_URI connection
 FE: Google Analytics account created  
   
 #### TODO / Feedback (! == Working On It)  
-- [ ] Improve CSS for Android / Mobile view
-- [ ] Don't re-render the page when user types something new
+- [ ] Don't re-render the page when user types something new  
 - [ ] Test Audience: Reddit  
 - [ ] (optional) Render some nice, calming free music  
 - [ ] User Account -- can view what you upload and what others have uploaded. RDBMS?  

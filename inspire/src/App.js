@@ -5,6 +5,7 @@ import SubmitForm from './components/SubmitForm'
 import Notification from './components/Notification'
 import linkService from './services/links'
 import './App.css'
+import './responsive.css'
 import './services/reactGA'
 import { initGA, trackingPageGA } from './services/reactGA'
 
@@ -152,7 +153,7 @@ console.log(`IMMA selected ${selectedPicture}`)
 
 return (
     // <div> style={{ backgroundImage: `url(${GIFLinks[randomNumberGenerator(GIFLinks)].link})` }}>
-  <div style={{ backgroundImage: `url(${selectedPicture})`}} className="background-image">
+  <div style={{ backgroundImage: `url(${selectedPicture})`}} className="background-image responsive">
     {/* <div> */}
        <Notification message={notifMessage} />
        < br />
@@ -162,7 +163,7 @@ return (
        {/* <GIFs url={GIFLinks} randomNumber={randomNumberGenerator(GIFLinks)}/> */}
        <Links url={webLinks} randomNumber={randomNumberGenerator(webLinks)}/>
        <p className="body"> Add a GIF or Link to inspire someone else below! </p>
-       <SubmitForm addLink={addLink} data={addLinkData} />
+       <SubmitForm className="form" addLink={addLink} data={addLinkData} />
        <Footer/> 
     </div>
   )

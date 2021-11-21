@@ -1,0 +1,28 @@
+/* For mobile */
+@media only screen and (max-width: 700px){
+    .responsive {
+        line-height: 50px;
+        /* padding: 20px 0; */
+    }
+    h1.line__1{
+        font-size: calc(10px + 2vmin);
+    }
+    h1.line__2{
+        font-size: calc(10px + 2vmin);
+    }
+    /* html { font-size: calc( 16px + (24 - 16) * (100vw - 400px) / (800 - 400) ); } */
+}
+/* For desktop */
+@media only screen and (min-width: 700px){
+    .responsive {
+        line-height: 100px;
+        padding: 50px 0;
+    }
+    h1.line__1{
+        font-size: calc(30px + 2vmin);
+    }
+    h1.line__2{
+        font-size: calc(30px + 2vmin);
+    }
+    /* html { font-size: calc( 16px + (24 - 16) * (100vw - 400px) / (800 - 400) ); } */
+}
