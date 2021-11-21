@@ -25,12 +25,9 @@ Motivation:
 1. Solves the problem of typos when I key in expenses manually.
 2. Saves me 30 minutes of error-checking each month. This took 5 hours to develop, so it will be worth it in 10 months!
 
-## Project 4: inspire
+## Project 4: inspire (v1.1)
 A `MERN fullstack web application` to inspire users, through imagery or weblinks. Check it out [here](https://inspire.herokuapp.com/).  
-v1.1  
-![GIF v1.1](https://s5.gifyu.com/images/New-tab---Work---Microsoft_-Edge-2021-11-21-14-53-07.gif)  
-v1.0
-![GIF](https://s9.gifyu.com/images/download396fe89a662af2b5.gif)  
+![GIF v1.1](https://s5.gifyu.com/images/New-tab---Work---Microsoft_-Edge-2021-11-21-14-53-07.gif)   
   
 Motivation:  
 1. Sometimes we are stuck in the same loop of thinking (think: same friends, same family), and having a chance to see a fresh perspective will help to give us new ideas.  
