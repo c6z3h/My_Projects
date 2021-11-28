@@ -1,5 +1,11 @@
 Note: FE == FrontEnd, BE = BackEnd  
-  
+
+#### Version 1.2 [IN PROGRESS]
+- [x] Don't re-render the page when user typing (Redux state management)  
+- [x] Include image credits
+- [x] Code refactors (Custom Hooks / open-in-new-tab / remove console.logs)  
+- [ ] Test Audience: Reddit  
+
 #### Version 1.1  
 - [x] Analytics  
 Fixed up Google Analytics with react-ga package  
@@ -32,8 +38,7 @@ BE: fix MONGODB_URI connection
 - [x] Setup Analytics
 FE: Google Analytics account created  
   
-#### TODO / Feedback (! == Working On It)  
-- [ ] Don't re-render the page when user types something new  
-- [ ] Test Audience: Reddit  
+#### TODO / Feedback
 - [ ] (optional) Render some nice, calming free music  
 - [ ] User Account -- can view what you upload and what others have uploaded. RDBMS?  
+- [ ] Inconsistency over Chrome, Microsoft Edge.

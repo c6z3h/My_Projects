@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import GIFs from './components/GIFs'
+// import GIFs from './components/GIFs'
 import Links from './components/Links'
 import SubmitForm from './components/SubmitForm'
 import Notification from './components/Notification'
@@ -51,7 +51,7 @@ const hook1 = () => {
   linkService
   .getAllGIFs()
   .then(allLinks => {
-    console.log(`this is allLinks: ${allLinks}`)
+    // console.log(`this is allLinks: ${allLinks}`)
     setGIFLinks(allLinks)
   })
 }
@@ -62,7 +62,7 @@ const hook2 = () => {
   linkService
   .getAllLinks()
   .then(allLinks => {
-    console.log(`this is allLinks: ${allLinks}`)
+    // console.log(`this is allLinks: ${allLinks}`)
     setWebLinks(allLinks)
   })
 }
@@ -70,100 +70,43 @@ const hook2 = () => {
 useEffect(hook2, [])
 
   // 1. INIT -- for user-submission
-  const [ links, setLinks ] = useState([]) 
-  const [ newLink, setNewLinks ] = useState('')
-  const [ newType, setNewType ] = useState('GIF')
-  const [notifMessage, setNotifMessage] = useState('')
+  // const [ links, setLinks ] = useState([]) 
+  // const [ newLink, setNewLinks ] = useState('')
+  // const [ newType, setNewType ] = useState('GIF')
 // 1. INIT -- for rendering GIF or weblinks
   const [ GIFLinks, setGIFLinks ] = useState([])
   const [ webLinks, setWebLinks ] = useState([])
 
   // // Event Handler
-  const handleLinkChange = (event) => setNewLinks(event.target.value)
-  const handleTypeChange= (event) => setNewType(event.target.value)
-  const handleGIFChange = (event) => setGIFLinks(...GIFLinks)
-
-  // // Filter
-  // const peopleToShow = filter
-  //       ? persons.filter(person => person.name.toLowerCase().includes(filter.toLowerCase()))
-  //       : persons
-
-  // 2. CREATE or UPDATE PERSON
-  const addLink = (event) => {
-    event.preventDefault()
-    const linkObject = {
-      // id: links.length + 1,
-      link: newLink,
-      type: newType,
-    }
-    console.log(`This is the linkObject ${linkObject}, link ${linkObject.link}, and type ${linkObject.type}`)
-      linkService
-        .create(linkObject)
-        .then(returnedLinks =>{
-          setLinks(links.concat(returnedLinks))
-        setNotifMessage(`Added ${linkObject.link}`)
-        setTimeout(() => {
-          setNotifMessage('')
-        }, 5000)
-      })
-      .catch(error => {
-        console.log(error.response.data)
-        setNotifMessage(`${error.response.data.error}`)
-        setTimeout(() => {
-          setNotifMessage('')
-        }, 5000)
-      })
-    // }
-    setNewLinks('')
-    setNewType('')
-  }
- 
-  const addLinkData = {
-    // INITIALLY addPerson, newName and newNumber
-    newLink,
-    newType,
-    handleLinkChange,
-    handleTypeChange
-  }
+  // const handleLinkChange = (event) => setNewLinks(event.target.value)
+  // const handleTypeChange= (event) => setNewType(event.target.value)
+  // const handleGIFChange = (event) => setGIFLinks(...GIFLinks)
 
   const randomNumberGenerator = (ListOfLinkOfChoice) => {
     return Math.floor(Math.random()*ListOfLinkOfChoice.length)
   }
 
-  const refresh = {
-    handleGIFChange
-  }
-
-//   const GIFs = ({url, randomNumber}) => {
-//     console.log(url)
-//     if (url.length !== 0){
-//       return url[randomNumber].link
-//     }
-//     return null
-// }
-//  console.log(`randGenerator GIFLinks[${randomNumberGenerator(GIFLinks)}`)
-// const pictureArray = [{skyPicture1}, {skyPicture2}, {skyPicture3}, {skyPicture4}];
+  // const refresh = {
+  //   handleGIFChange
+  // }
 
 const GIFArray = GIFLinks.map(GIFobject => GIFobject.link)
-console.log(`IMMA GIFLINKS ${JSON.stringify(GIFLinks)}`)
-console.log(`IMMA GIFARRAY ${GIFArray}`)
+// console.log(`IMMA GIFLINKS ${JSON.stringify(GIFLinks)}`)
+// console.log(`IMMA GIFARRAY ${GIFArray}`)
 const randomIndex = Math.floor(Math.random() * GIFArray.length);
 const selectedPicture = GIFArray[randomIndex];
-console.log(`IMMA selected ${selectedPicture}`)
+// console.log(`IMMA selected ${selectedPicture}`)
 
 return (
-    // <div> style={{ backgroundImage: `url(${GIFLinks[randomNumberGenerator(GIFLinks)].link})` }}>
-  <div style={{ backgroundImage: `url(${selectedPicture})`}} className="background-image responsive">
-    {/* <div> */}
-       <Notification message={notifMessage} />
-       < br />
+  <div style={{ backgroundImage: `url(${selectedPicture}`}} className="background-image responsive">
+       <Notification />
+       {/* <br /> */}
        <h1 className="line__1">Welcome! What inspiration</h1>
        <h1 className="line__2">will you find today?</h1>
-       < br />
-       {/* <GIFs url={GIFLinks} randomNumber={randomNumberGenerator(GIFLinks)}/> */}
-       <Links url={webLinks} randomNumber={randomNumberGenerator(webLinks)}/>
+       <Links style="padding:50" url={webLinks} randomNumber={randomNumberGenerator(webLinks)}/>
        <p className="body"> Add a GIF or Link to inspire someone else below! </p>
-       <SubmitForm className="form" addLink={addLink} data={addLinkData} />
+       <SubmitForm />
+       <a target="_blank" href={selectedPicture} className="body" rel="noreferrer">Image Credits</a>
        <Footer/> 
     </div>
   )
