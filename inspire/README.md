@@ -1,8 +1,15 @@
 #### TODO / Feedback
-- [ ] Inconsistency over Chrome, Microsoft Edge.
+- [ ] Reflect on choices, Seek feedback -- [1] Advertise more, [2] Improve features
+- [ ] Display inconsistency over Chrome, Microsoft Edge.
 - [ ] (optional) Render some nice, calming free music  
 - [ ] User Account -- can view what you upload and what others have uploaded. RDBMS?  
 
+### Quick Notes
+* Pull GIFs from gfycat API? https://github.com/public-apis/public-apis#photography
+* Pull famous quotes from API? https://github.com/fisenkodv/dictum
+* Pull medium articles from Medium API? https://github.com/Medium/medium-api-docs
+* Become Involved in Communities Around Your Interests https://cult.honeypot.io/reads/how-to-create-a-side-project-that-gets-you-noticed/
+  
 #### Version 1.2
 - [x] Don't re-render the page when user typing (Redux state management)  
 - [x] Include image credits
