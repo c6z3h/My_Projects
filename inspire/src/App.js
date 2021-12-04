@@ -98,7 +98,7 @@ const selectedPicture = GIFArray[randomIndex];
 // console.log(`IMMA selected ${selectedPicture}`)
 
 return (
-  <div style={{ backgroundImage: `url(${selectedPicture}`}} className="background-image responsive">
+  <div style={{ backgroundImage: `url(${selectedPicture}`}} className="background-image">
        <Notification className="body"/>
        <br/>
        <h1 className="line__1">Welcome! What inspiration</h1>

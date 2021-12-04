@@ -13,6 +13,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
+  /* from responsive */
+  line-height: 5vh;
 }
 
 /*
@@ -63,6 +65,9 @@
   /* define animation types for text + cursor */
   animation: animated-text__1 2s steps(20, end) 1s 1 normal both,
     animated-cursor__1 900ms steps(20, end) 8;
+  /* from responsive */
+  padding-top: 5vh;
+  line-height: 10vh;
 }
 .line__2 {
   border-right: 2px hidden;
@@ -71,6 +76,8 @@
     animated-cursor__2 900ms steps(15, end) infinite;
   -webkit-animation-delay: 3s;
   animation-delay: 3s;
+  /* from responsive */
+  padding-bottom: 10vh;
 }
 @keyframes animated-cursor__1 {
   from {border-right-color: rgba(17, 17, 17, 0.9);}
@@ -123,7 +130,10 @@ a:hover, a:active {
 .body {
   color: white;
   font-size: calc(10px + 1.5vmin);
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  /* from responsive */
+  line-height: 5vh;
+  padding-bottom: 5vh;
 }
 
 .form {
