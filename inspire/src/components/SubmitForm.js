@@ -38,33 +38,16 @@ const SubmitForm = () => {
 
     return(
         <form onSubmit={add}>
-            <div>
+            <div className="body">
                 URL:
                 <input {...link} reset='' placeholder="https://upload.wikimedia.org/wikipedia/commons/..."/>
                 <select {...type} reset='GIF'>
                     <option value="GIF">GIF</option>
                     <option value="link">Link</option>
                 </select>
-                <button type="submit">add</button>
+                <button class="button" type="submit">Add</button>
             </div>
         </form>
-        // <form onSubmit={addLink}>
-        //     <div>
-        //         {/* <SafeAreaView> */}
-        //         URL: <input
-        //         value={data.newLink}
-        //         onChange={data.handleLinkChange}
-        //         placeholder="https://upload.wikimedia.org/wikipedia/commons/..."
-        //         />
-        //         {/* </SafeAreaView> */}
-        //         <select value={data.newType} onChange={data.handleTypeChange}>
-        //             <option> </option>
-        //             <option value="GIF">GIF</option>
-        //             <option value="link">Link</option>
-        //         </select>
-        //         <button type="submit">add</button>
-        //     </div>
-        // </form>
     )
 }
 

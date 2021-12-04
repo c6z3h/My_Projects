@@ -10,11 +10,11 @@ const Notification = () => {
 		borderWidth: 1,
 	}
 	if (notification === '') {
-		return <div style={style}></div>
+		return <div /*style={style}*/ className="header_notif"> </div>
 	} else {
 		return (
-			<div style={style} className="body">
-				You added {notification}
+			<div /*style={style}*/ className="header_notif">
+				Thanks for sharing {notification} !
 			</div>
 		)
 	}

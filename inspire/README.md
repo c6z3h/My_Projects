@@ -1,10 +1,14 @@
 #### TODO / Feedback
-- [ ] Reflect on choices, Seek feedback -- [1] Advertise more, [2] Improve features
-- [ ] Display inconsistency over Chrome, Microsoft Edge.
+- [x] Reflect on choices, Seek feedback -- [1] Advertise more, [2] Improve features
+- [x] Implement responsive web design: Display inconsistency over Chrome, Microsoft Edge.
+- [!] Talk to some reddit channel moderators to see if they can find a way to make this useful (eg. r/depression)
+- [!] Talk to / pickup best practices from real apps
+- [ ] Improve user engagement: interview them? entertainment? Chatzone of db size ~200? Pop oldest?
+- [ ] Lower the barrier to entry (mentally) eg. Entertainment
 - [ ] (optional) Render some nice, calming free music  
 - [ ] User Account -- can view what you upload and what others have uploaded. RDBMS?  
 
-### Quick Notes
+### Quick Ideas
 * Pull GIFs from gfycat API? https://github.com/public-apis/public-apis#photography
 * Pull famous quotes from API? https://github.com/fisenkodv/dictum
 * Pull medium articles from Medium API? https://github.com/Medium/medium-api-docs

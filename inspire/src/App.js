@@ -10,18 +10,18 @@ import './services/reactGA'
 import { initGA, trackingPageGA } from './services/reactGA'
 
 const Footer = () => {
-  const footerStyle = {
-    color: 'blue',
-    background: 'gray',
-    fontStyle: 'italic',
-    fontSize: 25,
-    left:0,
-    bottom:0,
-    right:0
-  }
+  // const footerStyle = {
+  //   color: 'blue',
+  //   background: 'gray',
+  //   fontStyle: 'italic',
+  //   fontSize: 25,
+  //   left:0,
+  //   bottom:0,
+  //   right:0
+  // }
   return (
-    <div style={footerStyle} className="footer">
-      <em>comments/feedback to: <a href="https://github.com/c6z3h">c6z3h</a></em>
+    <div /*style={footerStyle}*/ className="footer">
+      comments/feedback to: <a href="https://github.com/c6z3h">c6z3h</a>
     </div>
   )
 }
@@ -99,14 +99,14 @@ const selectedPicture = GIFArray[randomIndex];
 
 return (
   <div style={{ backgroundImage: `url(${selectedPicture}`}} className="background-image responsive">
-       <Notification />
-       {/* <br /> */}
+       <Notification className="body"/>
+       <br/>
        <h1 className="line__1">Welcome! What inspiration</h1>
        <h1 className="line__2">will you find today?</h1>
-       <Links style="padding:50" url={webLinks} randomNumber={randomNumberGenerator(webLinks)}/>
+       <Links  url={webLinks} randomNumber={randomNumberGenerator(webLinks)}/>
        <p className="body"> Add a GIF or Link to inspire someone else below! </p>
        <SubmitForm />
-       <a target="_blank" href={selectedPicture} className="body" rel="noreferrer">Image Credits</a>
+       <a target="_blank" href={selectedPicture} rel="noreferrer">Image Credits</a>
        <Footer/> 
     </div>
   )
