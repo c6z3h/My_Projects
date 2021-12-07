@@ -1,19 +1,21 @@
 #### TODO / Feedback
-- [x] Reflect on choices, Seek feedback -- [1] Advertise more, [2] Improve features
-- [x] Implement responsive web design: Display inconsistency over Chrome, Microsoft Edge.
-- [!] Talk to some reddit channel moderators to see if they can find a way to make this useful (eg. r/depression)
-- [!] Talk to / pickup best practices from real apps
 - [ ] Improve user engagement: interview them? entertainment? Chatzone of db size ~200? Pop oldest?
 - [ ] Lower the barrier to entry (mentally) eg. Entertainment
 - [ ] (optional) Render some nice, calming free music  
 - [ ] User Account -- can view what you upload and what others have uploaded. RDBMS?  
 
-### Quick Ideas
+#### Quick Ideas
 * Pull GIFs from gfycat API? https://github.com/public-apis/public-apis#photography
 * Pull famous quotes from API? https://github.com/fisenkodv/dictum
 * Pull medium articles from Medium API? https://github.com/Medium/medium-api-docs
 * Become Involved in Communities Around Your Interests https://cult.honeypot.io/reads/how-to-create-a-side-project-that-gets-you-noticed/
-  
+
+#### Version 1.3
+- [x] Reflect on choices, Seek feedback -- [1] Advertise more, [2] Improve features
+- [x] Implement responsive web design: Display inconsistency over Chrome, Microsoft Edge.
+- [!] Send out 6 messages to reddit channels' mod team to see if they can find a way to integrate this with them (eg. r/depression)  
+- [!] Talk to / pickup best practices from real apps. NEXT: A better way to get user feedback
+
 #### Version 1.2
 - [x] Don't re-render the page when user typing (Redux state management)  
 - [x] Include image credits
